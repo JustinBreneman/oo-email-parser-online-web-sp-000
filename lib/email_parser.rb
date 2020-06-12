@@ -9,8 +9,6 @@ class EmailAddressParser
   end
 
   def parse
-    @parsed_at_comma = @emails.split(", ")
-    @parsed = @parsed_at_comma.split(" ")
-    @parsed
+    @emails = @emails.split(", ")
   end
 end
