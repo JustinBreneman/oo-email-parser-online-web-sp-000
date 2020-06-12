@@ -9,10 +9,8 @@ class EmailAddressParser
   end
 
   def parse
-    @emails = @emails.split(", ")
-    if @emails.length == 1
-      @emails = @emails[0].split(" ").flatten
-    end
+    @emails = @emails.split(",")
+    @emails = @emails.join.split(" ").flatten
     @emails
   end
 end
