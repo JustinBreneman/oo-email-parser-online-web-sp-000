@@ -11,6 +11,6 @@ class EmailAddressParser
   def parse
     @emails = @emails.split(",")
     @emails = @emails.join.split(" ").flatten
-    @emails
+    @emails.uniq
   end
 end
