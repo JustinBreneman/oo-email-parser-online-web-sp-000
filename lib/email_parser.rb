@@ -11,7 +11,7 @@ class EmailAddressParser
   def parse
     @emails = @emails.split(", ")
     if @emails.length == 1
-      @emails = @emails.split(" ")
+      @emails = @emails[0].split(" ").flatten
     end
     @emails
   end
